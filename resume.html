@@ -1,0 +1,372 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><style>@charset "UTF-8";
+/* Workaround for 'break-before:avoid' */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+span, q {
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+@page {
+  size: A4;
+  margin: 15mm 0 20mm 0;
+}
+@page :first {
+  margin-top: 10mm;
+}
+a {
+  color: #222222;
+  font-weight: inherit;
+  text-decoration: none;
+}
+a[href] {
+  text-decoration: underline;
+  text-decoration-color: #888888;
+}
+
+p, q {
+  line-height: 1.25em;
+}
+
+li {
+  line-height: 1.35em;
+}
+li:first-child {
+  margin-top: 0;
+}
+
+.content {
+  width: 1000px;
+  height: auto;
+  padding: 0 50px;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222222;
+}
+
+.table {
+  width: 100%;
+  display: table;
+}
+.table .main {
+  display: table-cell;
+  width: 70%;
+  padding-right: 50px;
+}
+.table .side {
+  display: table-cell;
+  width: 30%;
+  padding-left: 50px;
+  text-align: right;
+}
+
+.summary {
+  font-size: 15px;
+}
+.summary:empty {
+  display: none;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+}
+
+.margin-container-2:not(:first-child) {
+  margin-top: 20px;
+}
+
+.margin-container-3:not(:first-child) {
+  margin-top: 30px;
+}
+
+.margin-container-4:not(:first-child) {
+  margin-top: 50px;
+}
+
+.padding-container-2 {
+  padding: 20px 0;
+}
+
+.margin-text-1 {
+  margin-top: 2px;
+}
+.margin-text-1:empty {
+  display: none;
+}
+
+.margin-text-2 {
+  margin-top: 4px;
+}
+.margin-text-2:empty {
+  display: none;
+}
+
+.margin-text-3 {
+  margin-top: 6px;
+}
+.margin-text-3:empty {
+  display: none;
+}
+
+.margin-text-4 {
+  margin-top: 8px;
+}
+.margin-text-4:empty {
+  display: none;
+}
+
+.margin-text-5 {
+  margin-top: 14px;
+}
+.margin-text-5:empty {
+  display: none;
+}
+
+.no-break {
+  break-inside: avoid;
+}
+
+.no-alone-1 {
+  break-inside: avoid;
+}
+.no-alone-1::after {
+  content: "";
+  display: block;
+  height: 75px;
+  margin-bottom: -75px;
+}
+
+.no-alone-2 {
+  break-inside: avoid;
+}
+.no-alone-2::after {
+  content: "";
+  display: block;
+  height: 150px;
+  margin-bottom: -150px;
+}
+
+.markdown h1 {
+  font-size: 160%;
+  font-weight: bolder;
+}
+.markdown h2 {
+  font-size: 150%;
+  font-weight: bolder;
+}
+.markdown h3 {
+  font-size: 140%;
+  font-weight: bolder;
+}
+.markdown h4 {
+  font-size: 130%;
+  font-weight: bold;
+}
+.markdown h5 {
+  font-size: 120%;
+  font-weight: bold;
+}
+.markdown h6 {
+  font-size: 110%;
+  font-weight: bold;
+}
+.markdown ul, .markdown ol {
+  margin-left: 20px;
+}
+.markdown img {
+  display: block;
+  margin: 20px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+.markdown blockquote {
+  margin: 20px 0;
+  padding: 15px 20px;
+}
+.markdown blockquote p {
+  display: inline;
+}
+.markdown code {
+  font-family: monospace;
+}
+
+.main .highlights {
+  width: auto;
+  display: block;
+  padding: 0 10px;
+  margin-bottom: 0;
+  columns: 2;
+  column-width: 310px;
+  column-gap: 10px;
+}
+.main .highlights li {
+  font-size: 14px;
+  list-style: none;
+}
+.main .highlights li:before {
+  content: "· ";
+  vertical-align: middle;
+}
+.main .left {
+  display: table-cell;
+}
+.main .left .title {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+.main .left .subtitle {
+  font-size: 16px;
+  font-weight: lighter;
+  display: block;
+}
+.main .right {
+  text-align: right;
+  display: table-cell;
+}
+.main .right .date {
+  font-size: 15px;
+  font-weight: lighter;
+  white-space: nowrap;
+}
+
+.basics .main {
+  vertical-align: middle;
+}
+.basics .main .name {
+  font-size: 80px;
+  line-height: 1em;
+  font-weight: bold;
+  display: block;
+  margin-left: -5.6px;
+}
+.basics .main .label {
+  font-size: 40px;
+  line-height: 1em;
+  font-weight: lighter;
+  display: block;
+  margin-left: -1.6px;
+}
+.basics .side {
+  vertical-align: middle;
+  padding-left: 0;
+  padding-top: 15px;
+}
+.basics .side .contact {
+  list-style-type: none;
+}
+.basics .side .contact li {
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+.links ul {
+  list-style: none;
+}
+.links ul li {
+  font-size: 14px;
+}
+
+.education .title {
+  font-size: 15px;
+}
+.education .institution {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.awards .header .title {
+  font-size: 15px;
+}
+.awards .header .awarder {
+  font-size: 15px;
+  font-weight: lighter;
+}
+.awards .summary {
+  font-size: 14px;
+}
+
+.certificates .name {
+  font-size: 15px;
+}
+.certificates .issuer {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.skills .section-title {
+  margin: 0;
+}
+.skills .container {
+  display: block;
+  columns: 2;
+  column-gap: 10px;
+}
+.skills .container .article {
+  break-inside: avoid-column;
+  min-width: 120px;
+  padding-top: 20px;
+}
+.skills .container .article span {
+  display: block;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.skills .container .article li {
+  font-size: 14px;
+  list-style: none;
+}
+
+.languages ul {
+  list-style: none;
+}
+.languages ul li {
+  font-size: 14px;
+}
+
+.interests ul {
+  list-style: none;
+}
+.interests ul li {
+  font-size: 14px;
+}
+
+.references .name {
+  font-size: 15px;
+}
+.references q {
+  font-size: 14.5px;
+  font-weight: lighter;
+  font-style: italic;
+}</style><title>Resume Amos Elmaliah – Software Developer</title></head><body><div class="content"><div class="basics"><div class="table padding-container-2"><div class="main"><span class="name">Amos Elmaliah</span><span class="label">Software Developer</span></div><div class="side"><ul class="contact"><li>(929) 309-5026</li><li>amosel@mail.com</li><li class="margin-text-5">Delancey, New York, US</li></ul></div></div><div class="summary markdown padding-container-2"><p>Full Stack, Web3 (Solidity/Node/React), native mobile dev since 2008. Currently learning ZK Proofs</p>
+</div></div><div class="table padding-container-2"><div class="main"><div class="work margin-container-4"><p class="section-title no-alone-2">Experience</p><div class="container"><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Lead Software Developer</span><span class="subtitle margin-text-1"><a href="https://daostack.io">DaoStack</a> · Remote</span></div><div class="right"><span class="date">Oct 2021 - Oct 2022</span></div></div></div><div class="summary markdown margin-text-4"><p>Dev lead of an On-chain fundraising platform allow DAOs (Decentralized Autonomous Organization) to coordinate and crowd fund special project that require more accessibility to broader wider audience.</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Lead Development of fundraising Dapp http://commongood.it</li><li>Contribute and define to the web3 frontend architecture</li><li>Develop Solidity contracts to include milestone logic for fundraising</li><li>Develop subgraph code to expose contract history and database to the front end</li><li>Re-architecture of a firebase database for https://common.io</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Owner</span><span class="subtitle margin-text-1"><a>Cedar software Inc</a> · New York City</span></div><div class="right"><span class="date">Aug 2014 - Present</span></div></div></div><div class="summary markdown margin-text-4"><p>Owner and Chief of Contract work</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Consulting, training and development of fullstack applications for agencies and startups</li><li>Involved in more than half a dozen major iOS apps such as Beme Inc, NYFW, a private aviation company, The Orchard</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">CTO</span><span class="subtitle margin-text-1"><a href="https://www.linkedin.com/company/starbyt/">Starbyt</a> · Tel Aviv, Israel</span></div><div class="right"><span class="date">Jan 2018 - Jun 2020</span></div></div></div><div class="summary markdown margin-text-4"><p>Managed and Lead technology for multiple agency projects</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Managed multiple native mobile and web projects for clients in Israel and in the US.</li><li>Built and lead an agile offshore development team of 7 developers using React, React-Native and Node.JS</li><li>Conducted research in music and DSP algorithms, computer vision, and machine learning.</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Lead Mobile</span><span class="subtitle margin-text-1"><a href="https://www.linkedin.com/company/receptiv/">MediaBrix/Receptiv</a> · New York City</span></div><div class="right"><span class="date">Oct 2012 - Jan 2014</span></div></div></div><div class="summary markdown margin-text-4"><p>Paved the transaction from Adobe Flash Rich Media advertizing to Hybrid Mobile with new customer apps such as Beach Buggy Racing</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Contribute and redesign a mobile SDK with javascript bridge running business logic (years before react native)</li><li>Oversee and contribute to native iOS (Objective C) and Android (Java) and Unity and Phone Gap Plugins</li><li>Extend API to expose MRAID (Mobile Rich Media Ad Interface Definitions).</li><li>Extend API with other Ad Networks such as Flurry and Burstly</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">App Developer</span><span class="subtitle margin-text-1"><a href="https://techcrunch.com/2012/06/14/rewind-me-lets-you-explore-your-digital-history-then-rewards-you-for-it/">Rewind Me Inc</a> · New York City</span></div><div class="right"><span class="date">May 2012 - Sep 2012</span></div></div></div><div class="summary markdown margin-text-4"><p>Build iOS app that provides a way for users to store and own their social data</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Prototyped and build multi threaded high throughput i/o background download manger</li><li>Optimized iOS CoreData hydration, transaction chunk size and faulting.</li><li>Creating thread safe hot cache for partial object representations</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Mobile Developer</span><span class="subtitle margin-text-1"><a href="https://www.linkedin.com/company/oddcast/">Oddcast</a></span></div><div class="right"><span class="date">Jun 2010 - Jun 2011</span></div></div></div><div class="summary markdown margin-text-4"><p>Prototyped, developed and shipped mobile Apps</p>
+</div></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">iPhone Developer</span><span class="subtitle margin-text-1"><a href="https://www.youtube.com/watch?v=_LXDPEFWU5M">iFog</a></span></div><div class="right"><span class="date">May 2008 - Dec 2010</span></div></div></div><div class="summary markdown margin-text-4"><p>Shipped quickly an entertainment mobile apps that ustilized the first iPhone SDK</p>
+</div><ul class="highlights margin-text-4 no-break"><li>iPhone Developer of app</li><li>more than 250K downloads in less than 3 months</li><li>Reached 10 most downloaded apps</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title"> Developer and Educator</span><span class="subtitle margin-text-1"><a href="">UIMUI</a></span></div><div class="right"><span class="date">May 2008 - Dec 2010</span></div></div></div><div class="summary markdown margin-text-4"></div><ul class="highlights margin-text-4 no-break"><li>Managed, developed and shipped mobile apps</li><li>Serve as consultant on user experience and developing mobile products.</li><li>Mentor at Bezelel Academy of Art and Design Jerusalem.</li><li>Mentor at the IDC Media Innovation Lab.</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Interaction Designer and Developer</span><span class="subtitle margin-text-1"><a href="">I AM RANDOM</a></span></div><div class="right"><span class="date">Mar 2004 - Nov 2008</span></div></div></div><div class="summary markdown margin-text-4"><p>Digital Performance software solutions developer</p>
+</div><ul class="highlights margin-text-4 no-break"><li>Developed max/msp systems that synchronized and sequence sound synthesizers</li><li>Developed experimental sound instruments using granular synthesis, FM synthesis</li><li>Developed experimental video jockey tools for live video events</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Video Editor and Motion Design</span><span class="subtitle margin-text-1"><a href="">I AM RANDOM</a></span></div><div class="right"><span class="date">Oct 2005 - Jun 2008</span></div></div></div><div class="summary markdown margin-text-4"><p>Edited and post produced documentary films, commercials and corporate internal communication videos for Dutch and Israeli Companies.</p>
+</div></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Media Creator, Concept Development.</span><span class="subtitle margin-text-1"><a href="">A.Elmaliah</a></span></div><div class="right"><span class="date">Oct 2005 - Aug 2008</span></div></div></div><div class="summary markdown margin-text-4"><p>Edited and post produced documentary, commercial and corporate internal communication videos.</p>
+</div></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Instructor, Editor</span><span class="subtitle margin-text-1"><a href="https://www.dctvny.org">DCTV</a></span></div><div class="right"><span class="date">Feb 2008 - Jun 2008</span></div></div></div><div class="summary markdown margin-text-4"><p>Gave workshops in Final Cut, Motion, Color, Soundtrack, After Effect.</p>
+</div></div></div></div><div class="volunteer margin-container-4"><p class="section-title no-alone-2">Volunteer</p><div class="container"><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">volunteer</span><span class="subtitle margin-text-1"><a href="https://www.newyorkcares.org">New York Cares</a></span></div><div class="right"><span class="date">Jan 2012 - Jan 2013</span></div></div></div><div class="summary markdown margin-text-4"><p>Support elder and senior citizens wellbeing</p>
+</div></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Course Supervisor</span><span class="subtitle margin-text-1"><a href="https://www.landmarkworldwide.com">Landmark Education</a></span></div><div class="right"><span class="date">Mar 2009 - Mar 2013</span></div></div></div><div class="summary markdown margin-text-4"><p>Support elder and senior citizens wellbeing</p>
+</div></div></div></div></div><div class="side"><div class="skills margin-container-4"><p class="section-title no-alone-1">Skills</p><div class="container"><div class="article no-break"><span>Web3</span><ul class="margin-text-2"><li>Solidity</li><li>TheGraph</li><li>Foundry</li><li>Hardhat</li><li>Ethers.js</li></ul></div><div class="article no-break"><span>Fullstack</span><ul class="margin-text-2"><li>Serverless/Node/Express/Nest</li><li>React/Vue/Svelte</li><li>Redux/ReactQuery/Apollo/Urql/Mobx</li><li>AWS/Firebase/G-Cloud</li></ul></div><div class="article no-break"><span>Mobile</span><ul class="margin-text-2"><li>React Native</li><li>Cocoa/XCode/SwiftUI/CoreData</li><li>Java/ASP</li><li>Fastlane</li></ul></div><div class="article no-break"><span>Languages</span><ul class="margin-text-2"><li>Typescript</li><li>Swift</li><li>ObjectiveC</li><li>Java</li><li>JSX</li><li>AssemblyScript</li><li>Rust</li><li>GraphQL</li></ul></div><div class="article no-break"><span>Others</span><ul class="margin-text-2"><li>User Experience</li><li>User Interfaces</li><li>Developer Experience</li><li>Product Development</li><li>Functional Programming</li><li>Software Instruments</li></ul></div></div></div><div class="education margin-container-4"><p class="section-title no-alone-1">Education</p><div class="container"><div class="article margin-container-2 no-break"><div class="title markdown"><p>Computer Music</p>
+</div><span class="institution margin-text-2"><a href="http://sonology.org">The Institute of Sonology</a></span></div><div class="article margin-container-2 no-break"><div class="title markdown"><p>ArtScience, Digital Communication and Media/Multimedia</p>
+</div><span class="institution margin-text-2"><a>Hogeschool van Beeldende Kunsten, Muziek en Dans</a></span></div><div class="article margin-container-2 no-break"><div class="title markdown"></div><span class="institution margin-text-2"><a>Tech Stars</a></span></div></div></div><div class="references margin-container-4"><p class="section-title no-alone-2">References</p><div class="container"><div class="article margin-container-2 no-break"><span class="name">Gilad Haimov</span><q class="margin-text-2">had the privilege of working with Amos on developing a complex crypto-investments blockchain project. Amos has an exceptional technological skills, and his ability to learn on the job, navigate new knowledge domains, as well as lead and manage were felt and appreciated by all. He is smart, proactive, result oriented and responsible and a great asset to any company.</q></div><div class="article margin-container-2 no-break"><span class="name">Ric Neil</span><q class="margin-text-2">Amos and I worked together at Mediabrix. He created the SDK that I had game teams integrate. There are many types of engineers that can do this work, but Amos is the best, because his work is like art. His attention to detail and determination to make things perfect only made my job easier. He is one of the rare engineers that I have worked with that works with you in the trenches to deliver the right thing at the right time, right now. Not only that but he is also a great dinner companion and has such a passion for life and friendship it makes you glad to be on the planet with him.</q></div><div class="article margin-container-2 no-break"><span class="name">Sai Kong</span><q class="margin-text-2">EXPERT mobile developer. Recommended.</q></div><div class="article margin-container-2 no-break"><span class="name">Hila Dar</span><q class="margin-text-2">Amos is sharp, dedicated, professional and great with getting things done. My students find his ideas fresh and inspiring, admire his knowledge and experience and produce great value from his simple and practical solutions. Although having no formal Computer Engineering education, his teaching defiantly show his hard gained garage crafts.</q></div></div></div><div class="languages margin-container-4 no-break"><p class="section-title no-alone-1">Languages</p><div class="container"><ul><li class="article margin-text-2">English · Full Professional</li><li class="article margin-text-2">Hebrew · Native Speaker</li><li class="article margin-text-2">Dutch · Elementary</li><li class="article margin-text-2">German · Elementary</li></ul></div></div><div class="links margin-container-4 no-break"><p class="section-title no-alone-1">Links</p><div class="container"><ul><li class="article"><a href="http://amosel.org"><strong>amosel.org</strong></a></li><li class="article margin-text-4"><a href="http://twitter.com/amosel"><strong>twitter.com</strong>/amosel</a></li><li class="article margin-text-4"><a href="http://github.com/amosel"><strong>github.com</strong>/amosel</a></li><li class="article margin-text-4"><a href="http://linkedin.com/in/amosel"><strong>linkedin.com</strong>/in/amosel</a></li></ul></div></div></div></div></div></body></html>

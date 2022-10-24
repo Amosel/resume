@@ -1,0 +1,334 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Amos Elmaliah",
+    "label": "Software Developer",
+    "image": "http://amosel.org/photo.jpg",
+    "email": "amosel@mail.com",
+    "phone": "(929) 309-5026",
+    "url": "http://amosel.org",
+    "summary": "Full Stack, Web3 (Solidity/Node/React), native mobile dev since 2008. Currently learning ZK Proofs",
+    "headline": "Building decentralized internet for everyone",
+    "location": {
+      "address": "2567 Back River Rd",
+      "postalCode": "NY 13752",
+      "city": "Delancey",
+      "countryCode": "US",
+      "region": "New York"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "amosel",
+        "url": "http://twitter.com/amosel"
+      },
+      {
+        "network": "Github",
+        "username": "amosel",
+        "url": "http://github.com/amosel"
+      },
+      {
+        "network": "Linkedin",
+        "username": "amosel",
+        "url": "http://linkedin.com/in/amosel"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "DaoStack",
+      "location": "Remote",
+      "description": "Building Collaborative Networks",
+      "position": "Lead Software Developer",
+      "url": "https://daostack.io",
+      "startDate": "2021-10-01",
+      "endDate": "2022-10-01",
+      "summary": "Dev lead of an On-chain fundraising platform allow DAOs (Decentralized Autonomous Organization) to coordinate and crowd fund special project that require more accessibility to broader wider audience.",
+      "highlights": [
+        "Lead Development of fundraising Dapp http://commongood.it",
+        "Contribute and define to the web3 frontend architecture",
+        "Develop Solidity contracts to include milestone logic for fundraising",
+        "Develop subgraph code to expose contract history and database to the front end",
+        "Re-architecture of a firebase database for https://common.io"
+      ]
+    },
+    {
+      "name": "Cedar software Inc",
+      "position": "Owner",
+      "startDate": "2014-08-31",
+      "endDate": "",
+      "location": "New York City",
+      "summary": "Owner and Chief of Contract work",
+      "highlights": [
+        "Consulting, training and development of fullstack applications for agencies and startups",
+        "Involved in more than half a dozen major iOS apps such as Beme Inc, NYFW, a private aviation company, The Orchard"
+      ]
+    },
+    {
+      "name": "Starbyt",
+      "position": "CTO",
+      "startDate": "2018-01-31",
+      "endDate": "2020-06-30",
+      "highlights": [
+        "Managed multiple native mobile and web projects for clients in Israel and in the US.",
+        "Built and lead an agile offshore development team of 7 developers using React, React-Native and Node.JS",
+        "Conducted research in music and DSP algorithms, computer vision, and machine learning."
+      ],
+      "url": "https://www.linkedin.com/company/starbyt/",
+      "summary": "Managed and Lead technology for multiple agency projects",
+      "location": "Tel Aviv, Israel"
+    },
+    {
+      "name": "MediaBrix/Receptiv",
+      "position": "Lead Mobile",
+      "startDate": "2012-10-31",
+      "endDate": "2014-01-31",
+      "summary": "Paved the transaction from Adobe Flash Rich Media advertizing to Hybrid Mobile with new customer apps such as Beach Buggy Racing",
+      "highlights": [
+        "Contribute and redesign a mobile SDK with javascript bridge running business logic (years before react native)",
+        "Oversee and contribute to native iOS (Objective C) and Android (Java) and Unity and Phone Gap Plugins",
+        "Extend API to expose MRAID (Mobile Rich Media Ad Interface Definitions).",
+        "Extend API with other Ad Networks such as Flurry and Burstly"
+      ],
+      "url": "https://www.linkedin.com/company/receptiv/",
+      "location": "New York City"
+    },
+    {
+      "name": "Rewind Me Inc",
+      "position": "App Developer",
+      "startDate": "2012-05-31",
+      "endDate": "2012-09-30",
+      "highlights": [
+        "Prototyped and build multi threaded high throughput i/o background download manger",
+        "Optimized iOS CoreData hydration, transaction chunk size and faulting.",
+        "Creating thread safe hot cache for partial object representations"
+      ],
+      "summary": "Build iOS app that provides a way for users to store and own their social data",
+      "url": "https://techcrunch.com/2012/06/14/rewind-me-lets-you-explore-your-digital-history-then-rewards-you-for-it/",
+      "location": "New York City"
+    },
+    {
+      "name": "Oddcast",
+      "position": "Mobile Developer",
+      "startDate": "2010-06-30",
+      "endDate": "2011-06-30",
+      "highlights": [],
+      "summary": "Prototyped, developed and shipped mobile Apps",
+      "url": "https://www.linkedin.com/company/oddcast/"
+    },
+    {
+      "name": "iFog",
+      "position": "iPhone Developer",
+      "startDate": "2008-05-31",
+      "endDate": "2010-12-31",
+      "highlights": [
+        "iPhone Developer of app",
+        "more than 250K downloads in less than 3 months",
+        "Reached 10 most downloaded apps"
+      ],
+      "summary": "Shipped quickly an entertainment mobile apps that ustilized the first iPhone SDK",
+      "url": "https://www.youtube.com/watch?v=_LXDPEFWU5M"
+    },
+    {
+      "name": "UIMUI",
+      "position": " Developer and Educator",
+      "startDate": "2008-05-31",
+      "endDate": "2010-12-31",
+      "highlights": [
+        "Managed, developed and shipped mobile apps",
+        "Serve as consultant on user experience and developing mobile products.",
+        "Mentor at Bezelel Academy of Art and Design Jerusalem.",
+        "Mentor at the IDC Media Innovation Lab."
+      ],
+      "url": ""
+    },
+    {
+      "name": "I AM RANDOM",
+      "position": "Interaction Designer and Developer",
+      "startDate": "2004-03-31",
+      "endDate": "2008-11-30",
+      "highlights": [
+        "Developed max/msp systems that synchronized and sequence sound synthesizers",
+        "Developed experimental sound instruments using granular synthesis, FM synthesis",
+        "Developed experimental video jockey tools for live video events"
+      ],
+      "summary": "Digital Performance software solutions developer",
+      "url": ""
+    },
+    {
+      "name": "I AM RANDOM",
+      "position": "Video Editor and Motion Design",
+      "startDate": "2005-10-31",
+      "endDate": "2008-06-30",
+      "highlights": [],
+      "summary": "Edited and post produced documentary films, commercials and corporate internal communication videos for Dutch and Israeli Companies.",
+      "url": ""
+    },
+    {
+      "name": "A.Elmaliah",
+      "position": "Media Creator, Concept Development.",
+      "startDate": "2005-10-31",
+      "endDate": "2008-08-31",
+      "highlights": [],
+      "summary": "Edited and post produced documentary, commercial and corporate internal communication videos.",
+      "url": ""
+    },
+    {
+      "name": "DCTV",
+      "position": "Instructor, Editor",
+      "startDate": "2008-02-28",
+      "endDate": "2008-06-30",
+      "highlights": [],
+      "summary": "Gave workshops in Final Cut, Motion, Color, Soundtrack, After Effect.",
+      "url": "https://www.dctvny.org"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "New York Cares",
+      "position": "volunteer",
+      "url": "https://www.newyorkcares.org",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Support elder and senior citizens wellbeing"
+    },
+    {
+      "organization": "Landmark Education",
+      "position": "Course Supervisor",
+      "url": "https://www.landmarkworldwide.com",
+      "startDate": "2009-03-01",
+      "endDate": "2013-03-01",
+      "summary": "Support elder and senior citizens wellbeing"
+    }
+  ],
+  "education": [
+    {
+      "institution": "The Institute of Sonology",
+      "area": "Computer Music",
+      "studyType": "",
+      "startDate": "2000-12-31",
+      "endDate": "2001-12-31",
+      "score": "",
+      "courses": [],
+      "url": "http://sonology.org"
+    },
+    {
+      "institution": "Hogeschool van Beeldende Kunsten, Muziek en Dans",
+      "area": "Digital Communication and Media/Multimedia",
+      "studyType": "ArtScience",
+      "startDate": "2002-12-31",
+      "endDate": "2008-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Tech Stars",
+      "area": "",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "keywords": [
+        "Solidity",
+        "TheGraph",
+        "Foundry",
+        "Hardhat",
+        "Ethers.js"
+      ],
+      "level": "Advanced",
+      "name": "Web3"
+    },
+    {
+      "keywords": [
+        "Serverless/Node/Express/Nest",
+        "React/Vue/Svelte",
+        "Redux/ReactQuery/Apollo/Urql/Mobx",
+        "AWS/Firebase/G-Cloud"
+      ],
+      "level": "Senior",
+      "name": "Fullstack"
+    },
+    {
+      "keywords": [
+        "React Native",
+        "Cocoa/XCode/SwiftUI/CoreData",
+        "Java/ASP",
+        "Fastlane"
+      ],
+      "level": "Senior",
+      "name": "Mobile"
+    },
+    {
+      "keywords": [
+        "Typescript",
+        "Swift",
+        "ObjectiveC",
+        "Java",
+        "JSX",
+        "AssemblyScript",
+        "Rust",
+        "GraphQL"
+      ],
+      "name": "Languages"
+    },
+    {
+      "name": "Others",
+      "level": "",
+      "keywords": [
+        "User Experience",
+        "User Interfaces",
+        "Developer Experience",
+        "Product Development",
+        "Functional Programming",
+        "Software Instruments"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "fluency": "Full Professional",
+      "language": "English"
+    },
+    {
+      "fluency": "Native Speaker",
+      "language": "Hebrew"
+    },
+    {
+      "fluency": "Elementary",
+      "language": "Dutch"
+    },
+    {
+      "fluency": "Elementary",
+      "language": "German"
+    }
+  ],
+  "interests": [],
+  "references": [
+    {
+      "name": "Gilad Haimov",
+      "reference": "had the privilege of working with Amos on developing a complex crypto-investments blockchain project. Amos has an exceptional technological skills, and his ability to learn on the job, navigate new knowledge domains, as well as lead and manage were felt and appreciated by all. He is smart, proactive, result oriented and responsible and a great asset to any company."
+    },
+    {
+      "name": "Ric Neil",
+      "reference": "Amos and I worked together at Mediabrix. He created the SDK that I had game teams integrate. There are many types of engineers that can do this work, but Amos is the best, because his work is like art. His attention to detail and determination to make things perfect only made my job easier. He is one of the rare engineers that I have worked with that works with you in the trenches to deliver the right thing at the right time, right now. Not only that but he is also a great dinner companion and has such a passion for life and friendship it makes you glad to be on the planet with him."
+    },
+    {
+      "name": "Sai Kong",
+      "reference": "EXPERT mobile developer. Recommended."
+    },
+    {
+      "name": "Hila Dar",
+      "reference": "Amos is sharp, dedicated, professional and great with getting things done. My students find his ideas fresh and inspiring, admire his knowledge and experience and produce great value from his simple and practical solutions. Although having no formal Computer Engineering education, his teaching defiantly show his hard gained garage crafts."
+    }
+  ],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}
